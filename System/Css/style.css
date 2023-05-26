@@ -38,15 +38,126 @@ body
     align-items: center;
 }
 
-.letter
+.cardBox
 {
-    height: 50;
-    width: 100%;
-    color: white;
-    text-align: center;
-    font-size: 50px;
+    height: 70%;
+    width: 70%;
 }
 
+.letter
+{
+    height: 100%;
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 200%;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+
+    background-image: url(../img/flat-lay-elegant-birthday-candles-frame.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5%;
+}
+
+.gif
+{
+    width: 30%;
+    height: 30%;
+}
+
+.cardPage
+{
+    position: fixed;bottom: 5%;left: 5%;
+    height: 10%;
+    width: 20%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.card
+{
+    height: 75px;
+    width: 75px;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+
+    font-size: 20px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.top{background-image: url(../img/RedPresent.png);}
+.middle{background-image: url(../img/GreenPresent.png)}
+.button{background-image: url(../img/BluePresent.png);}
+
+.musicBox
+{
+    position: fixed; bottom: 5%; right: 5%;
+    width: 7.5%;
+    height: 15%;
+    /* background-color: bisque; */
+}
+
+@media only screen and (max-width: 600px)
+{
+    .container
+    {
+        padding-bottom: 20%;
+    }
+
+    .letter
+    {
+        font-size: 150%;
+    }
+
+    .cardPage
+    {
+        width: 40%;
+    }
+
+    .musicBox
+    {
+        width: 30%;
+        /* background-color: antiquewhite; */
+    }
+}
+
+#musicBox
+{
+    width: 100%;
+    height: 80%;
+}
+
+.music
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+}
+
+.smartBtn
+{
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.btnGroup
+{
+    display: flex;
+    justify-content: space-evenly;
+}
 .square
 {
     height: 10%;

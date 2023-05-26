@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday</title>
     <link rel="stylesheet" href="./System/Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 <body>
     <video autoplay muted loop id="myVideo">
@@ -13,12 +16,49 @@
         Your browser does not support HTML5 video.
     </video>
 
+    <div style="position: fixed; top: 5%; left: 5%;">Version 1.0 | Futher development is going on</div>
     <div class="container">
         <!-- <div class="square"></div> -->
-        <div class="letter">
-            Happy brithday
-        </div>
+        <div class="cardBox">
+            <div class="letter">
+                <p>Happy 20th Birthday</p>
+                <p>Ms. Su Myat Shwe Yee</p>
+                <p>May your days be awesome and so on!</p>
+                <div>
+                    <img src="./System/img/Mr.bean.gif" style="width: 100px;height: 100px;" alt="" class="gif"></img>
+                    <img src="./System/img/cake.gif" style="width: 100px;height: 100px;" alt="" class="gif"></img>
+                </div>
+            </div>
+        </div>    
         <!-- <div class="square"></div> -->
     </div>
+
+    <div class="cardPage">
+        <div class="card top"></div>
+        <div class="card middle"></div>
+        <div class="card button"></div>
+        <!-- <div class="card">3</div> -->
+    </div>
+
+    <div class="musicBox">
+        <div id="musicBox"><img src="./System/img/3TjN.png" class="music" alt=""></div>
+        <div class="btnGroup">
+            <button onclick="playSong()" type="button" class="smartBtn" id="smartBtnPlay">
+                <img src="./System/img/svg/play.svg" alt="">
+            </button>
+            <button onclick="nextSong()" type="button" class="smartBtn">
+                <img src="./System/img/svg/skip-forward.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <audio controls id="music" hidden src="./System/song/Street-Corner-Renaissance-Life-Could-Be-A-Dream.mp3">
+        <source id="0" src="./System/song/Street-Corner-Renaissance-Life-Could-Be-A-Dream.mp3" type="audio/mpeg">
+        <source id="1" src="./System/song/Kool-_-The-Gang-Celebration.mp3" type="audio/mpeg">
+        <source id="2" src="./System/song/On-Our-Way-by-Grace-Mesa.mp3" type="audio/mpeg">
+        <source id="3" src="./System/song/Summer_s-Gone-Victoria_┃Grace-Mesa-Right-Kind-of-Day.mp3" type="audio/mpeg">
+        <source id="4" src="./System/song/Sam-Smith-Too-Good-At-Goodbyes.mp3" type="audio/mpeg">
+    </audio>
 </body>
+<script src="./System/Js/music.js"></script>
 </html>
