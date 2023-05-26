@@ -1,0 +1,56 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image:url(/System/img/PonyoMoon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 100%; 
+    min-height: 100%;
+    filter: brightness(0.8);
+    z-index: -1;
+}
+
+.container
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.letter
+{
+    height: 50;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.square
+{
+    height: 10%;
+    width: 100%;
+    background-color: black;
+}
+
