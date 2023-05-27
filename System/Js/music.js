@@ -5,17 +5,13 @@ function playSong()
     if(music.paused)
     {
         music.play();
-        document.getElementById("smartBtnPlay").innerHTML='<img src="./System/img/svg/pause.svg" alt="">';
-        document.getElementById("musicBox").innerHTML='<img src="./System/img/3TjN.gif" class="music" alt="">';
+        stopBtn();
     }
     else
     {
         music.pause();
-        document.getElementById("smartBtnPlay").innerHTML='<img src="./System/img/svg/play.svg" alt="">';
-        document.getElementById("musicBox").innerHTML='<img src="./System/img/3TjN.png" class="music" alt="">';
+        playBtn();
     }
-    
-
 }
 
 let id = 0;
@@ -28,8 +24,7 @@ function nextSong()
         let nextMusic = document.getElementById(id);
         music.src = nextMusic.src;
         music.play();
-        document.getElementById("smartBtnPlay").innerHTML='<img src="./System/img/svg/pause.svg" alt="">';
-        document.getElementById("musicBox").innerHTML='<img src="./System/img/3TjN.gif" class="music" alt="">';
+        stopBtn()
     }
     else
     {
@@ -37,7 +32,23 @@ function nextSong()
         let nextMusic = document.getElementById(id);
         music.src = nextMusic.src;
         music.play();
-        document.getElementById("smartBtnPlay").innerHTML='<img src="./System/img/svg/pause.svg" alt="">';
-        document.getElementById("musicBox").innerHTML='<img src="./System/img/3TjN.gif" class="music" alt="">';
+        stopBtn()
     }
+}
+
+music.onended = function(){nextSong();}
+music.onplaying = function(){playBtn();}
+
+// Auguementative functions
+
+function playBtn()
+{
+    document.getElementById("smartBtnPlay").innerHTML='<img src="./System/img/svg/pause.svg" alt="">';
+    document.getElementById("musicBox").innerHTML='<img src="./System/img/3TjN.gif" class="music" alt="">';
+}
+
+function stopBtn()
+{
+    document.getElementById("smartBtnPlay").innerHTML='<img src="./System/img/svg/pause.svg" alt="">';
+    document.getElementById("musicBox").innerHTML='<img src="./System/img/3TjN.gif" class="music" alt="">';
 }
