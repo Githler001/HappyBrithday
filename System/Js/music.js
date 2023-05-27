@@ -37,14 +37,13 @@ function nextSong()
 }
 
 music.onended = function(){nextSong();}
-music.onplaying = function(){playBtn();}
 
 // Auguementative functions
 
 function playBtn()
 {
-    document.getElementById("smartBtnPlay").innerHTML='<img src="./System/img/svg/pause.svg" alt="">';
-    document.getElementById("musicBox").innerHTML='<img src="./System/img/3TjN.gif" class="music" alt="">';
+    document.getElementById("smartBtnPlay").innerHTML='<img src="./System/img/svg/play.svg" alt="">';
+    document.getElementById("musicBox").innerHTML='<img src="./System/img/3TjN.png" class="music" alt="">';
 }
 
 function stopBtn()
