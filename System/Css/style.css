@@ -1,0 +1,196 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: goldenrod;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 100%; 
+    min-height: 100%;
+    filter: brightness(0.8);
+    z-index: -1;
+}
+
+.container
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardBox
+{
+    height: 70%;
+    width: 70%;
+}
+
+.letter
+{
+    height: 100%;
+    width: 100%;
+    /* color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 150%;
+    text-align: center;
+    font-family: Rubik Bubbles;
+    background-image: url(../img/celebration-background-frame-with-golden-balloons-suitable-for-birthday-celebration.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5%;
+}
+
+.golden{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 150%;
+    text-align: center;
+    background-image: linear-gradient(
+     to right,
+     #462523 0,
+         #cb9b51 22%, 
+     #f6e27a 45%,
+     #f6f2c0 50%,
+     #f6e27a 55%,
+     #cb9b51 78%,
+     #462523 100%
+     );
+    color:transparent;
+    -webkit-background-clip:text
+
+}
+
+.gif
+{
+    width: 50%;
+    height: 50%;
+    pointer-events: none;
+}
+
+.cardPage
+{
+    position: fixed;bottom: 5%;left: 5%;
+    height: 10%;
+    width: 20%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.card
+{
+    height: 75px;
+    width: 75px;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+
+    font-size: 20px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.top{background-image: url(../img/Preasant_Red.png);}
+.middle{background-image: url(../img/Preasant_Green.png)}
+.button{background-image: url(../img/Preasant_Blue.png);}
+
+.musicBox
+{
+    position: fixed; bottom: 5%; right: 5%;
+    width: 7.5%;
+    height: 15%;
+    /* background-color: bisque; */
+}
+
+@media only screen and (max-width: 600px)
+{
+    .container
+    {
+        padding-bottom: 20%;
+    }
+
+    .letter
+    {
+        font-size: 150%;
+    }
+
+    .cardPage
+    {
+        width: 40%;
+    }
+
+    .musicBox
+    {
+        width: 30%;
+        /* background-color: antiquewhite; */
+    }
+}
+
+#musicBox
+{
+    width: 100%;
+    height: 80%;
+}
+
+.music
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+}
+
+.smartBtn
+{
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 30%;
+}
+
+.btnGroup
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.square
+{
+    height: 10%;
+    width: 100%;
+    background-color: black;
+}
+
+.white
+{
+    color: white;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="./System/Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video autoplay muted loop playsinline id="myVideo" preload="auto">
+        <source src="./System/video/Balloons 3D Live Wallpaper.mkv" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div style="position: fixed; top: 5%;display: flex;justify-content: start;margin: 0 4%;align-items: center; color: dimgray;">Version 1.5 | Futher development is going on | Pc only video | audio and video autoplay requested</div>
+    <div class="container">
+        <!-- <div class="square"></div> -->
+        <div class="cardBox">
+            <div class="letter">
+                <div class="golden">
+                <p>Happy 19th Birthday</p>
+                <p style="font-size: xx-large;">Ms. Eaint Hmue Khin</p>
+                <p>May your days be awesome and so on!</p>
+                </div>
+                <div>
+                    <div><iframe src="https://giphy.com/embed/feio2yIUMtdqWjRiaF" frameBorder="0" class="gif"></iframe></div>
+                </div>
+            </div>
+        </div>    
+        <!-- <div class="square"></div> -->
+    </div>
+
+    <div class="cardPage">
+        <div class="card top"></div>
+        <div class="card middle"></div>
+        <div class="card button"></div>
+        <!-- <div class="card">3</div> -->
+    </div>
+
+    <div class="musicBox">
+        <div id="musicBox"><img src="./System/img/3TjN.png" class="music" alt=""></div>
+        <div class="btnGroup">
+            <button onclick="playSong()" type="button" class="smartBtn" id="smartBtnPlay">
+                <img src="./System/img/svg/play.svg" alt="">
+            </button>
+            <button onclick="nextSong()" type="button" class="smartBtn">
+                <img src="./System/img/svg/skip-forward.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <audio controls id="music" src="./System/song/Street-Corner-Renaissance-Life-Could-Be-A-Dream.mp3" hidden>
+        <source id="0" src="./System/song/Avicii - The days Lyrics.mp3" type="audio/mpeg">
+        <source id="1" src="./System/song/Ed Sheeran - What Do I Know- [Official Audio].mp3" type="audio/mpeg">
+        <source id="2" src="./System/song/Le Festin.mp3" type="audio/mpeg">
+        <source id="3" src="./System/song/One Direction - Story of My Life (Lyrics).mp3" type="audio/mpeg">
+        <source id="4" src="./System/song/The Greatest Showman Cast - This Is Me (Official Lyric Video).mp3" type="audio/mpeg">
+    </audio>
+</body>
+<script src="./System/Js/music.js"></script>
+</html>
