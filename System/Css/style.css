@@ -8,6 +8,7 @@
 body
 {
     background-color: goldenrod;
+    background-image: url(/System/img/bday_1-05.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,12 +49,13 @@ body
 {
     height: 100%;
     width: 100%;
+    padding: 10px;
     /* color: black; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 150%;
+    font-size: 250%;
     text-align: center;
     font-family: Rubik Bubbles;
     background-image: url(../img/celebration-background-frame-with-golden-balloons-suitable-for-birthday-celebration.jpg);
@@ -70,7 +72,7 @@ body
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    font-size: 150%;
+    font-size: 80%;
     text-align: center;
     background-image: linear-gradient(
      to right,
@@ -86,6 +88,12 @@ body
     -webkit-background-clip:text
 
 }
+
+/* @media screen and (min-width: 500px) {
+    .letter{
+        font-size : 250%;
+    }
+} */
 
 .gif
 {
@@ -134,7 +142,7 @@ body
     /* background-color: bisque; */
 }
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 650px)
 {
     .container
     {
@@ -143,7 +151,7 @@ body
 
     .letter
     {
-        font-size: 150%;
+        font-size: 120%;
     }
 
     .cardPage
@@ -153,9 +161,41 @@ body
 
     .musicBox
     {
-        width: 30%;
+        width: 25%;
+        height: 15%;
         /* background-color: antiquewhite; */
     }
+
+    .card{
+        height: 50px;
+        width: 50px;
+    }
+
+    .nameBirthday{
+        font-size: 150%;
+    }
+
+}
+
+
+@media only screen and (max-height: 420px){
+    .gif{
+        height: 35%;
+        width: 35%;
+    }
+
+    .musicBox
+    {
+        width: 15%;
+        height: 20%;
+        /* background-color: antiquewhite; */
+    }
+
+    .letter
+    {
+        font-size: 150%;
+    }
+    
 }
 
 #musicBox
